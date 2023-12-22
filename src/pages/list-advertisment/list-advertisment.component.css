@@ -1,0 +1,35 @@
+.button-import {
+  background-color: #f18841;
+  height: 48px;
+  padding: 0rem 2rem;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin-bottom: 3rem;
+}
+
+.status-list {
+  list-style: none;
+  color: gray;
+  margin-top: 1rem;
+
+}
+
+.status-list li {
+  line-height: 30px;
+}
+
+.table-svg svg {
+  width: 16px;
+  height: 26px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+
+.bg-gray-input {
+  background-color: #E0E0E0;
+}

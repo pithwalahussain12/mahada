@@ -1,0 +1,163 @@
+<div class="flex">
+  <div>
+    <app-sidebar></app-sidebar>
+  </div>
+
+  <div class="w-full overflow-x-hidden">
+
+    <div class="header"></div>
+
+    <div class="p-6">
+      <form>
+        <div class="grid">
+          <div class="col">
+            <select class="w-full h-3rem round cutom-bg round-border">
+              <option>Select Board</option>
+              <option>Select Board</option>
+              <option>Select Board</option>
+              <option>Select Board</option>
+              <option>Select Board</option>
+            </select>
+          </div>
+          <div class="col">
+            <select class="w-full h-3rem cutom-bg round-border">
+              <option>Select Lottery</option>
+            </select>
+          </div>
+          <div class="col">
+            <button class="button-import">Import Master Data</button>
+          </div>
+          <div class="col">
+          </div>
+        </div>
+
+        <div class="grid mt-4">
+          <div class="col">
+            <input type="date" class="w-full h-3rem cutom-bg round-border" name="" id="">
+          </div>
+          <div class="col">
+            <label class="relative">
+              <input type="file" class="opacity-0 absolute top-0 left-0 right-0 h-3rem" />
+              <button class="btn-payment ">Upload Banner</button>
+            </label>
+          </div>
+          <div class="col">
+            <button class="btn-payment" (click)="showDialog()" label="">Bank and Payment Details</button>
+
+            <!-- <button class="btn-payment">Bank and Payment Details</button> -->
+          </div>
+          <div class="col">
+            <input type="text" class="w-full h-3rem pl-2 cutom-bg round-border" placeholder="Draw Venue" />
+          </div>
+        </div>
+
+        <div class="mt-8">
+          <h2 class="gilroy-bold">Add Header</h2>
+        </div>
+        <div class="mt-4">
+          <div class="">
+            <input type="text" placeholder="Header" class="input-header mb-3 round-border" />
+          </div>
+          <div class="">
+            <textarea class="text-area-m mb-3 round-border"></textarea>
+
+          </div>
+          <div class="">
+            <button class="button-import">Save</button>
+          </div>
+
+        </div>
+
+
+
+      </form>
+
+      <div class="mt-8 mb-3">
+        <h2 class="gilroy-bold">Details</h2>
+      </div>
+
+      <table class="w-full">
+        <thead class="bg-orange-app p-2">
+
+          <tr>
+            <td class="p-3 text-white gilroy-bold">Sr.No</td>
+            <td class="p-3 text-white gilroy-bold">Header</td>
+            <td class="p-3 text-white gilroy-bold">description</td>
+            <td class="p-3 text-white gilroy-bold">Edit</td>
+            <td class="p-3 text-white gilroy-bold">Delete</td>
+          </tr>
+
+        </thead>
+
+        <tbody>
+          <tr class="bg-gray-c">
+            <td class="p-2">1</td>
+            <td class="p-2">Lorem ipsum</td>
+            <td class="p-2">Lorem ipsum</td>
+            <td class="p-2">Edit</td>
+            <td class="p-2">Delete</td>
+          </tr>
+          <tr class="bg-gray-c">
+            <td class="p-2">1</td>
+            <td class="p-2">Lorem ipsum</td>
+            <td class="p-2">Lorem ipsum</td>
+            <td class="p-2">Edit</td>
+            <td class="p-2">Delete</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="justify-content-end flex">
+        <button class="btn-form bg-orange-app text-white mr-4 ">Submit</button>
+        <button routerLink="/preview-pdf" class="btn-form bg-orange-app text-white  mr-4 ">Save</button>
+        <button class="btn-form text-orange-app">Cancel</button>
+      </div>
+      <p-dialog header="Bank and payment Details" [(visible)]="visible" [modal]="true" [style]="{ width: '60vw' }"
+        [draggable]="false" [resizable]="false">
+        <table class="w-full">
+          <thead class="bg-orange-app p-2">
+
+            <tr>
+              <td class="p-3 text-white gilroy-bold">Name</td>
+              <td class="p-3 text-white gilroy-bold">Account Number
+              </td>
+              <td class="p-3 text-white gilroy-bold">Mail ID</td>
+
+            </tr>
+
+          </thead>
+
+          <tbody>
+            <tr class="bg-gray-c">
+              <td class="p-2">Name</td>
+              <td class="p-2">Lorem ipsum</td>
+              <td class="p-2">Lorem ipsum</td>
+
+            </tr>
+            <tr class="bg-gray-c">
+              <td class="p-2">1</td>
+              <td class="p-2">Lorem ipsum</td>
+              <td class="p-2">Lorem ipsum</td>
+
+            </tr>
+            <tr class="bg-gray-c">
+              <td class="p-2">1</td>
+              <td class="p-2">Lorem ipsum</td>
+              <td class="p-2">Lorem ipsum</td>
+
+            </tr>
+            <tr class="bg-gray-c">
+              <td class="p-2">1</td>
+              <td class="p-2">Lorem ipsum</td>
+              <td class="p-2">Lorem ipsum</td>
+
+            </tr>
+          </tbody>
+        </table>
+      </p-dialog>
+
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,18 @@
+.btn-form {
+  height: 45px;
+  width: 140px;
+  border: none;
+  border-radius: 5px;
+  font-family: gilroy-bold;
+  cursor: pointer;
+  margin-top: -1rem;
+}
+
+.text-insert {
+  height: 250px;
+  border: 2px solid #f18841;
+  display: block;
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}

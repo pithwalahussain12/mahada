@@ -1,0 +1,31 @@
+<div class="flex">
+  <div>
+    <app-sidebar></app-sidebar>
+  </div>
+
+  <div class="w-full overflow-x-hidden">
+
+    <div class="header"></div>
+
+    <div class="p-6">
+      <img src="../../assets/image4.png" class="w-full " />
+    </div>
+
+    <div class="pl-6 pr-6">
+      <div class="justify-content-end flex mb-4">
+        <button routerLink="/create-ad" class="btn-form text-orange-app mr-4">Cancel</button>
+        <button (click)="showDialog()" class="btn-form bg-orange-app text-white mr-4 ">Correction</button>
+        <button routerLink="/preview-pdf" class="btn-form bg-orange-app text-white   ">Approve</button>
+      </div>
+
+    </div>
+
+    <p-dialog header="Insert Your Feedback
+    " [(visible)]="visible" [modal]="true" [style]="{ width: '50vw' }" [draggable]="false" [resizable]="false">
+      <textarea class="text-insert"></textarea>
+      <button class="btn-form text-orange-app mr-4">Cancel</button>
+      <button routerLink="/preview-pdf" class="btn-form bg-orange-app text-white   ">submit</button>
+    </p-dialog>
+
+  </div>
+</div>

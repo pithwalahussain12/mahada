@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import 'primeicons/primeicons.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'gilroy-light';
+
+}
+
+@font-face {
+  font-family: 'gilroy-bold';
+  src: url('./assets/font/Gilroy-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'gilroy-light';
+  src: url('./assets/font/Gilroy-Light.ttf');
+}
+
+.gilroy-bold {
+  font-family: 'gilroy-bold';
+}
+
+.gilroy-light {
+  font-family: 'gilroy-light';
+}
+
+.text-orange-app {
+  color: #f18841;
+}
+
+.bg-orange-app {
+  background-color: #f18841;
+}
+
+.bg-gray-c {
+  background-color: #f2f2f2;
+}
